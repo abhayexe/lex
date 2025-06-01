@@ -8,6 +8,25 @@
   </head>
   <body>
     <div class="fat-border">
+      <!-- Add color picker modal -->
+      <div class="color-picker-modal">
+        <div class="color-picker-content">
+          <h3>Choose Theme Color</h3>
+          <div class="color-input-group">
+            <label for="themeColorPicker">Select color:</label>
+            <input
+              type="color"
+              id="themeColorPicker"
+              value="#bd30c2"
+              title="Choose theme color"
+            />
+          </div>
+          <div class="color-picker-buttons">
+            <button id="applyColor">Apply</button>
+            <button id="cancelColor">Cancel</button>
+          </div>
+        </div>
+      </div>
       <div class="notification-message">
         <span class="message-text"
           >The Virtual Machine reports that the quest 05 supports mouse pointer
@@ -168,7 +187,7 @@
 
           <div class="terminal-window">
             <div class="terminal-line">
-              <span class="output">//VALID PHONE NUMBER <br>%{</span>
+              <span class="output">//VALID PHONE NUMBER <br />%{</span>
             </div>
             <div class="terminal-line">
               <span class="output">#include &lt;stdio.h&gt;</span>
